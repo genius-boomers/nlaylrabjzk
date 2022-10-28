@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Huli Huli Yuh</title>
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="theme-color" content="#fff" />
+    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="default" /> -->
+    <style>
+      body {
+        margin: 0;
+        font-family: Yantramanav;
+      }
+      .receipt-img {
+        height: 100vh;
+      }
+      .content {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+      }
+      .spacer-top {
+        margin-top: 56px;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        list-style: none;
+      }
+      .receipt-number {
+        font-size: 21px;
+        font-weight: 400;
+      }
+      .reciept-info {
+        margin-top: 19px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #3a3a3a;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img class="receipt-img" src="assets/blank-receipt-cropped.png" />
+    <div class="content">
+      <div class="spacer-top"></div>
+      <section class="receipt">
+        <ul class="receipt-list">
+          <li class="receipt-number" id="order-number">#29456163</li>
+          <li class="reciept-info" id="date">Wed. Oct. 12th, 2022</li>
+          <li class="reciept-info" id="order-time">Ordered: 1:58 PM</li>
+          <li class="reciept-info" id="target-time">Target: 2:22 PM</li>
+          <li class="reciept-info" id="completed-time">Completed: 2:01 PM</li>
+          <li class="reciept-info">Toasted</li>
+          <li class="reciept-info">Pines</li>
+          <li class="reciept-info">UC San Diego Triton2GO</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script type="module" src="main.js"></script>
+</html>
